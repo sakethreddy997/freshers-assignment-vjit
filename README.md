@@ -1,4 +1,4 @@
-/*Stage 1: Creating a Registration view for the user*/
+/*Stage 1: Created a Registration view for the user*/
 
  download mysql connector and add it to your project.
 ceate a class (MyConnection) to connect our login and register forms with mysql database
