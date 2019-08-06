@@ -29,7 +29,7 @@ if the user enters 0 , then console prompts the user to enter his/her :  <br />
 Name  <br />
 email id  <br />
 Mobile  no  <br />
-and through this the details of the user gets stored in a file (to make these details to get stored into a seperate file ,we use concepts : <br />
+and through this the details of the user gets stored in a file (to make these details to get stored into a seperate file ,we use concepts of : <br />
 Files <br />
 File Buffers  <br />
 @octocat :+1 <br />
