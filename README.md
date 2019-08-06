@@ -11,6 +11,6 @@ jdk 1.7.1 <br />
 junit -to test the application <br />
 Any of the ide  ex: Intellij , eclipse , netbeans. <br />
 understanding over oops concepts.<br />
-Maven ie, used as a buildq tool.<br />
+Maven ie, used as a build tool.<br />
 
 
