@@ -36,4 +36,4 @@ If User enters **1** , then he would be asked with with his name or mobile numbe
 * And now the user has enterd into the main screen of the recycling kiosk <br />
 
 *This Kiosk operational window would be updated*
-Thankyou
+Thankyou .
