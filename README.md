@@ -3,7 +3,8 @@
 
 # Project Analysis
 
-As part of any software project , the first and foremost thing is to start it with gathering the requirments
+As part of any software project , the first and foremost thing is to start it with gathering the requirments <br />
+Using these particular requirments identified  , need to analyze how to build the system, and all these documents are placed in Work_progress folder , Flow_diagrams.<br />
 
 # Requirments
 java programming language <br />
