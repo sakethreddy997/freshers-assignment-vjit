@@ -28,6 +28,9 @@ public class Rubicon_app
     int qty;
     int cap;
     double wt;
+     String username1;
+     String password1;
+     String phone1;
     
     
     //Constructor for General mode
@@ -89,21 +92,27 @@ public class Rubicon_app
 		File file = new File("out.txt");
 		FileWriter fw = new FileWriter(file, true);
 		PrintWriter pw = new PrintWriter(fw);
-		System.out.println("Enter your name");
-		Scanner scanner = new Scanner(System.in);
-		String username1 = scanner.nextLine();
-		System.out.println("Enter your password");
-		Scanner scanner1 = new Scanner(System.in);
-		String password1 = scanner1.nextLine();
 		System.out.println("Enter your mobile no");
 		Scanner scanner2 = new Scanner(System.in);
-		String phone1 = scanner2.nextLine();
+		 String phone1 = scanner2.nextLine();
+		
+		System.out.println("Enter your password");
+		Scanner scanner1 = new Scanner(System.in);
+		 String password1 = scanner1.nextLine();
+		 System.out.println("Enter your name");
+			Scanner scanner = new Scanner(System.in);
+			String username1 = scanner.nextLine();
+		
 		//System.out.println("Your name is " + username1);
 		//System.out.println("Your name is " + password1);
 		//System.out.println("Your name is " + phone1);
-		pw.write(username1+",");
+		
+			 pw.write(phone1+",");
+			
 		pw.write(password1+",");
-		pw.write(phone1);
+		 pw.write(username1+",");
+		
+		
 		pw.write("\n");
 		
 		
@@ -114,22 +123,19 @@ public class Rubicon_app
 	{
 		System.out.println("***Hello Rubicon folk*** ");
 		System.out.println("***Please enter you mobile number*** ");
-		Scanner scanner6 = new Scanner(System.in);
-		String phone = scanner6.nextLine();
-		if(verifyLogin(phone,filepath))
-	    	{
-	    		System.out.println("***Welcome*** ");
-	    		//System.out.println("***Profile details***");
-	    		//System.out.println("username: "+username1+"");
-		
-	}
-		else
-		{
-			System.out.println("***not registered*** ");	
-		}
 	
 	}
-       
+	Scanner scanner6 = new Scanner(System.in);
+	String phone2 = scanner6.nextLine();
+	Scanner scanner7 = new Scanner(System.in);
+	String password2 = scanner6.nextLine();
+	if(verifyLogin(phone2,password2,filepath))
+    	{
+    		System.out.println("***Welcome*** ");
+    		//System.out.println("***Profile details***");
+    		//System.out.println("username: "+username1+"");
+	
+}
     	
     	//File file = new File("out.txt");
 		//FileWriter fw = new FileWriter(file, true);
@@ -179,20 +185,20 @@ public class Rubicon_app
             	int m;
             	boolean mi;
             	do {
-            		Rubicon_app gi1=new Rubicon_app(1,"Plastic bottles",0,0,0.02); 
+            		Rubicon_app plastic=new Rubicon_app(1,"Plastic bottles",0,0,0.02); 
             		Rubicon_app i1=new Rubicon_app("Sprite PET 750ml",0,750,0.02);
             		Rubicon_app i4=new Rubicon_app("Sprite PET 2L",0,2000,0.02);
             		Rubicon_app i5=new Rubicon_app("Coke PET 750ml",0,750,0.02);
             		Rubicon_app i8=new Rubicon_app("Coke PET 2L",0,2000,0.02); 
-        		//App gi2=new App(2,"Glasses",0,0,0.7);  
-        		//App gi3=new App(3,"Metal Cans",0,0,0.04);  
-        		al.add(gi1);  
+        	 
+        		
+        		al.add(plastic);  
         		al.add(i1);
         		al.add(i4);  
         		al.add(i5);
         		al.add(i8);  
-        		//al.add(gi2);  
-        		//al.add(gi3); 
+        		 
+        		
         		System.out.println("Do you want to enter more items of different capacity 0(no)/1(yes)");
         		m = x.nextInt();
         		if(m==0) mi=false; else mi=true;
@@ -200,27 +206,40 @@ public class Rubicon_app
             	while(mi);
                 break; 
             case 2: 
-            	//Specific mode
-            	  
+            	//Glass materials
+            	Rubicon_app glass=new Rubicon_app(2,"Glasses",0,0,0.7);  
+            	
             	Rubicon_app i2=new Rubicon_app("Sprite Glass 200ml",0,200,0.7);  
-            	Rubicon_app i3=new Rubicon_app("Sprite Can 200ml",0,200,0.04);
+            	
         		 
         		  
             	Rubicon_app i6=new Rubicon_app("Coke Glass 200ml",0,200,0.7);  
-            	Rubicon_app i7=new Rubicon_app("Coke Can 200ml",0,200,0.04); 
+            
         		   
             	Rubicon_app i9=new Rubicon_app("Kingfisher Glass 650",0,650,0.7);  
-            	Rubicon_app i10=new Rubicon_app("Kingfisher Can 500",0,500,0.04);
-        		  
+           
+            	al.add(glass); 
         		al.add(i2);  
-        		al.add(i3);
+        		
         		
         		al.add(i6);
-        		al.add(i7);  
+        	
         		
         		al.add(i9);
-        		al.add(i10);  
+        		
                 break; 
+                
+            case 3:
+            	Rubicon_app metal=new Rubicon_app(3,"Metal Cans",0,0,0.04);  
+            	Rubicon_app i3=new Rubicon_app("Sprite Can 200ml",0,200,0.04);
+             	Rubicon_app i10=new Rubicon_app("Kingfisher Can 500",0,500,0.04);
+            	Rubicon_app i7=new Rubicon_app("Coke Can 200ml",0,200,0.04); 
+            	al.add(metal); 
+            	al.add(i3);
+            	al.add(i7);  
+            	al.add(i10);  
+            	break;
+            	
             default: 
             	System.out.println("Invalid option"); 
                 System.exit(0); 
@@ -249,7 +268,7 @@ public class Rubicon_app
             transformer.setOutputProperty(OutputKeys.INDENT, "yes");
             DOMSource source = new DOMSource(doc);
             StreamResult console = new StreamResult(System.out);
-            StreamResult file1 = new StreamResult(new File("/home/vishal/emps.xml"));
+            StreamResult file1 = new StreamResult(new File("F:\\rubycon-assignment-vjit\\saketh\\emps.xml"));
 
             transformer.transform(source, console);
             transformer.transform(source, file1);
@@ -295,11 +314,12 @@ public class Rubicon_app
     
 
  
-    public static boolean verifyLogin(String phone,String filepath)
+    public static boolean verifyLogin(String phone1,String password1,String filepath)
     {
     	boolean found=false;
-    	
     	String tempPhone="";
+    	String tempPassword="";
+    	
     	try
     	{
     		x=new Scanner(new File(filepath));
@@ -307,10 +327,11 @@ public class Rubicon_app
     		
     		while(x.hasNext() && !found)
     		{
-    			
     			tempPhone=x.next();
+    			tempPassword=x.next();
     			
-    			if( tempPhone.trim().equals(phone.trim())) 
+    			
+    			if(tempPhone.trim().equals(phone1.trim()) && tempPassword.trim().equals(password1.trim())  ) 
     			{
     				found=true;
     			}
