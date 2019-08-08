@@ -28,6 +28,9 @@ public class Rubicon_app
     int qty;
     int cap;
     double wt;
+    static String phone1;
+   static String password1;
+    static String username1;
     
     //Constructor for General mode
     Rubicon_app(int itemno,String name,int qty,int cap,double wt)
@@ -64,9 +67,30 @@ public class Rubicon_app
     	System.out.println("***********Rubicon Red Kiosk***************");
     	
     	System.out.println("############################################");
-    	File file = new File("out.txt");
+    	
+
+    	int n;
+	//Scanner x = new java.util.Scanner(System.in);
+	//int op = x.nextInt(); 
+	  boolean ni;
+	  System.out.println("Are you a new user 0(no)/1(yes)");
+	  Scanner x = new java.util.Scanner(System.in);
+	  n = x.nextInt();
+	  if(n==0) 
+		{
+		ni=false;
+		}
+		
+	else
+		{
+		ni=true;
+		}
+	
+	if(ni==false)
+	{
+		File file = new File("out.txt");
 		FileWriter fw = new FileWriter(file, true);
-		pw = new PrintWriter(fw);
+		PrintWriter pw = new PrintWriter(fw);
 		System.out.println("Enter your name");
 		Scanner scanner = new Scanner(System.in);
 		String username1 = scanner.nextLine();
@@ -86,14 +110,51 @@ public class Rubicon_app
 		
 		
 		pw.close();
+		
+	}
+	else if (ni==true)
+	{
+		System.out.println("***Hello Rubicon folk*** ");
+		System.out.println("***Please enter you mobile number*** ");
+	}
+	else
+	{
+		System.out.println("error");
+	}
+	
+
+    	
+       
+    	
+    	//File file = new File("out.txt");
+		//FileWriter fw = new FileWriter(file, true);
+		//pw = new PrintWriter(fw);
+		//System.out.println("Enter your name");
+		//Scanner scanner = new Scanner(System.in);
+		//String username1 = scanner.nextLine();
+		//System.out.println("Enter your password");
+		//String password1 = scanner1.nextLine();
+		//System.out.println("Enter your mobile no");
+		//Scanner scanner2 = new Scanner(System.in);
+		//String phone1 = scanner2.nextLine();
+		//System.out.println("Your name is " + username1);
+		//System.out.println("Your name is " + password1);
+		//System.out.println("Your name is " + phone1);
+		//pw.write(username1+",");
+		//pw.write(password1+",");
+		//pw.write(phone1);
+		//pw.write("\n");
+		
+		
+		//pw.close();
     
   
-    	if(verifyLogin(username1,password1,phone1,filepath))
-    	{
-    		System.out.println("***Welcome*** ");
-    		System.out.println("***Profile details***");
-    		System.out.println("username: "+username1+"");
-    		System.out.println("Phone no: "+phone1+"\n");
+    	//if(verifyLogin(username1,password1,phone1,filepath))
+    	//{
+    	//	System.out.println("***Welcome*** ");
+    		//System.out.println("***Profile details***");
+    		//System.out.println("username: "+username1+"");
+    		//System.out.println("Phone no: "+phone1+"\n");
  /*last parameter in constructor is weight of the material per ml capacity(1ml=?gm)
     Assuming:
     		1ml capacity plastic =0.02gms (500ml-10gms) 
@@ -191,11 +252,13 @@ public class Rubicon_app
  //Assuming that 10gms recycled product gives 7 credit points 
             System.out.println("Total credits earned are: "+String.format("%.0f", tgrams*0.7));
             System.out.println("Coupon Code to redeem your credits is: "+givenUsingApache_whenGeneratingRandomAlphanumericString_thenCorrect());
+	}
+	
     	
-    	}
-    	else
-    		System.out.println("User not found");
-    }
+    	
+    	//else
+    		//System.out.println("User not found");
+    //}
     
 
 
