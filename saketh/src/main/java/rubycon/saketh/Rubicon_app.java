@@ -28,9 +28,7 @@ public class Rubicon_app
     int qty;
     int cap;
     double wt;
-    static String phone1;
-   static String password1;
-    static String username1;
+    
     
     //Constructor for General mode
     Rubicon_app(int itemno,String name,int qty,int cap,double wt)
@@ -57,7 +55,7 @@ public class Rubicon_app
     }  
    
 
-    public static void main( String[] args ) throws TransformerException, ParserConfigurationException, IOException
+    public static void main( String[] args ) throws  IOException ,ParserConfigurationException, TransformerException
     {
     	//String username1=args[0];
     	//String password1=args[1];
@@ -86,7 +84,7 @@ public class Rubicon_app
 		ni=true;
 		}
 	
-	if(ni==false)
+	if(ni==true)
 	{
 		File file = new File("out.txt");
 		FileWriter fw = new FileWriter(file, true);
@@ -112,18 +110,25 @@ public class Rubicon_app
 		pw.close();
 		
 	}
-	else if (ni==true)
+	else if (ni==false)
 	{
 		System.out.println("***Hello Rubicon folk*** ");
 		System.out.println("***Please enter you mobile number*** ");
+		Scanner scanner6 = new Scanner(System.in);
+		String phone = scanner6.nextLine();
+		if(verifyLogin(phone,filepath))
+	    	{
+	    		System.out.println("***Welcome*** ");
+	    		//System.out.println("***Profile details***");
+	    		//System.out.println("username: "+username1+"");
+		
 	}
-	else
-	{
-		System.out.println("error");
-	}
+		else
+		{
+			System.out.println("***not registered*** ");	
+		}
 	
-
-    	
+	}
        
     	
     	//File file = new File("out.txt");
@@ -256,7 +261,9 @@ public class Rubicon_app
 	
     	
     	
-    	//else
+    	
+
+		//else
     		//System.out.println("User not found");
     //}
     
@@ -288,11 +295,10 @@ public class Rubicon_app
     
 
  
-    public static boolean verifyLogin(String username,String password,String phone,String filepath)
+    public static boolean verifyLogin(String phone,String filepath)
     {
     	boolean found=false;
-    	String tempUsername="";
-    	String tempPassword="";
+    	
     	String tempPhone="";
     	try
     	{
@@ -301,11 +307,10 @@ public class Rubicon_app
     		
     		while(x.hasNext() && !found)
     		{
-    			tempUsername=x.next();
-    			tempPassword=x.next();
+    			
     			tempPhone=x.next();
     			
-    			if(tempUsername.trim().equals(username.trim()) && tempPassword.trim().equals(password.trim()) && tempPhone.trim().equals(phone.trim())) 
+    			if( tempPhone.trim().equals(phone.trim())) 
     			{
     				found=true;
     			}
