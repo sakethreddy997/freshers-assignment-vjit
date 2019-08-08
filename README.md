@@ -32,8 +32,15 @@ Mobile  no  <br />
 and through this the details of the user gets stored in a file (to make these details to get stored into a seperate file ,we use concepts of : <br />
 Files <br />
 File Buffers  <br />
-If User enters **1** , then he would be asked with with his name or mobile number <br />
+If User enters **1** , then he would be asked with with his mobile number and password <br />
 * And now the user has enterd into the main screen of the recycling kiosk <br />
+After the user enters into the Rubicon Kiosk operational Window , user would be shown with 3 operations<br />
+Options would be like <br />
+1.Plastic<br />
+2.Glass<br />
+3.Cans<br />
+user would select either of them  , and enters the number of cans he want to place in the kiosk<br />
+On the basis of the inputs given Kiosk calculates the total recycled weight , and gives user with some points <br />
+These points are given as a coupon and 
 
-*This Kiosk operational window would be updated*
 Thankyou .
