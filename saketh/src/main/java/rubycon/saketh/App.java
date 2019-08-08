@@ -1,6 +1,7 @@
 package rubycon.saketh;
 
 import java.io.*;
+
 import java.util.*;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -18,9 +19,10 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
 
-public class App 
+public class Rubicon_app 
 {
 	public static Scanner x;
+	private static PrintWriter pw;
 	int itemno;  
     String name;  
     int qty;
@@ -28,7 +30,7 @@ public class App
     double wt;
     
     //Constructor for General mode
-    App(int itemno,String name,int qty,int cap,double wt)
+    Rubicon_app(int itemno,String name,int qty,int cap,double wt)
     {  
       this.itemno=itemno;  
       this.name=name;
@@ -41,7 +43,7 @@ public class App
     } 
     
     //Constructor for Specific mode
-    App(String name,int qty,int cap,double wt)
+    Rubicon_app(String name,int qty,int cap,double wt)
     {    
       this.name=name;
       x = new java.util.Scanner(System.in);
@@ -52,24 +54,46 @@ public class App
     }  
    
 
-    public static void main( String[] args ) throws TransformerException, ParserConfigurationException
+    public static void main( String[] args ) throws TransformerException, ParserConfigurationException, IOException
     {
-    	String username=args[0];
-    	String password=args[1];
-    	String phone=args[2];
-    	String filepath="F:\\\\rubycon-assignment-vjit\\\\saketh\\\\src\\\\main\\\\java\\\\rubycon\\\\saketh\\\\members.txt";
+    	//String username1=args[0];
+    	//String password1=args[1];
+    	//String phone1=args[2];
+    	String filepath="F:\\rubycon-assignment-vjit\\saketh\\out.txt";
     	double tgrams=0;
     	System.out.println("***********Rubicon Red Kiosk***************");
     	
     	System.out.println("############################################");
+    	File file = new File("out.txt");
+		FileWriter fw = new FileWriter(file, true);
+		pw = new PrintWriter(fw);
+		System.out.println("Enter your name");
+		Scanner scanner = new Scanner(System.in);
+		String username1 = scanner.nextLine();
+		System.out.println("Enter your password");
+		Scanner scanner1 = new Scanner(System.in);
+		String password1 = scanner1.nextLine();
+		System.out.println("Enter your mobile no");
+		Scanner scanner2 = new Scanner(System.in);
+		String phone1 = scanner2.nextLine();
+		//System.out.println("Your name is " + username1);
+		//System.out.println("Your name is " + password1);
+		//System.out.println("Your name is " + phone1);
+		pw.write(username1+",");
+		pw.write(password1+",");
+		pw.write(phone1);
+		pw.write("\n");
+		
+		
+		pw.close();
     
   
-    	if(verifyLogin(username,password,phone,filepath))
+    	if(verifyLogin(username1,password1,phone1,filepath))
     	{
     		System.out.println("***Welcome*** ");
     		System.out.println("***Profile details***");
-    		System.out.println("username: "+username+"");
-    		System.out.println("Phone no: "+phone+"\n");
+    		System.out.println("username: "+username1+"");
+    		System.out.println("Phone no: "+phone1+"\n");
  /*last parameter in constructor is weight of the material per ml capacity(1ml=?gm)
     Assuming:
     		1ml capacity plastic =0.02gms (500ml-10gms) 
@@ -81,7 +105,7 @@ public class App
     		System.out.println(" 1.Plastic Bottles\n 2.Glass\n 3.Metalcans");
 
     		int op = x.nextInt(); 
-    		ArrayList<App> al=new ArrayList<App>();
+    		ArrayList<Rubicon_app> al=new ArrayList<Rubicon_app>();
    
             switch (op) { 
             case 1: 
@@ -89,11 +113,11 @@ public class App
             	int m;
             	boolean mi;
             	do {
-            	App gi1=new App(1,"Plastic bottles",0,0,0.02); 
-            	App i1=new App("Sprite PET 750ml",0,750,0.02);
-            	App i4=new App("Sprite PET 2L",0,2000,0.02);
-            	App i5=new App("Coke PET 750ml",0,750,0.02);
-            	App i8=new App("Coke PET 2L",0,2000,0.02); 
+            		Rubicon_app gi1=new Rubicon_app(1,"Plastic bottles",0,0,0.02); 
+            		Rubicon_app i1=new Rubicon_app("Sprite PET 750ml",0,750,0.02);
+            		Rubicon_app i4=new Rubicon_app("Sprite PET 2L",0,2000,0.02);
+            		Rubicon_app i5=new Rubicon_app("Coke PET 750ml",0,750,0.02);
+            		Rubicon_app i8=new Rubicon_app("Coke PET 2L",0,2000,0.02); 
         		//App gi2=new App(2,"Glasses",0,0,0.7);  
         		//App gi3=new App(3,"Metal Cans",0,0,0.04);  
         		al.add(gi1);  
@@ -112,15 +136,15 @@ public class App
             case 2: 
             	//Specific mode
             	  
-        		App i2=new App("Sprite Glass 200ml",0,200,0.7);  
-        		App i3=new App("Sprite Can 200ml",0,200,0.04);
+            	Rubicon_app i2=new Rubicon_app("Sprite Glass 200ml",0,200,0.7);  
+            	Rubicon_app i3=new Rubicon_app("Sprite Can 200ml",0,200,0.04);
         		 
         		  
-        		App i6=new App("Coke Glass 200ml",0,200,0.7);  
-        		App i7=new App("Coke Can 200ml",0,200,0.04); 
+            	Rubicon_app i6=new Rubicon_app("Coke Glass 200ml",0,200,0.7);  
+            	Rubicon_app i7=new Rubicon_app("Coke Can 200ml",0,200,0.04); 
         		   
-        		App i9=new App("Kingfisher Glass 650",0,650,0.7);  
-        		App i10=new App("Kingfisher Can 500",0,500,0.04);
+            	Rubicon_app i9=new Rubicon_app("Kingfisher Glass 650",0,650,0.7);  
+            	Rubicon_app i10=new Rubicon_app("Kingfisher Can 500",0,500,0.04);
         		  
         		al.add(i2);  
         		al.add(i3);
@@ -145,10 +169,10 @@ public class App
             doc.appendChild(rootElement);
        
             
-   java.util.Iterator<App> iterator=al.iterator(); 	  
+   java.util.Iterator<Rubicon_app> iterator=al.iterator(); 	  
     	while(iterator.hasNext())
     	{  
-    		  App it=(App)iterator.next(); 
+    		Rubicon_app it=(Rubicon_app)iterator.next(); 
     		  rootElement.appendChild(getItem(doc,it.name,Integer.toString(it.qty),Integer.toString(it.cap)));
     		  System.out.println(it.name+" "+it.qty+" "+it.cap);
     		  tgrams+=it.qty*it.cap*it.wt;
@@ -159,10 +183,10 @@ public class App
             transformer.setOutputProperty(OutputKeys.INDENT, "yes");
             DOMSource source = new DOMSource(doc);
             StreamResult console = new StreamResult(System.out);
-            StreamResult file = new StreamResult(new File("/home/vishal/emps.xml"));
+            StreamResult file1 = new StreamResult(new File("/home/vishal/emps.xml"));
 
             transformer.transform(source, console);
-            transformer.transform(source, file);
+            transformer.transform(source, file1);
             System.out.println("Total amout of recycled items: "+tgrams+" gms");
  //Assuming that 10gms recycled product gives 7 credit points 
             System.out.println("Total credits earned are: "+String.format("%.0f", tgrams*0.7));
