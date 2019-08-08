@@ -42,5 +42,5 @@ Options would be like <br />
 user would select either of them  , and enters the number of cans he want to place in the kiosk<br />
 On the basis of the inputs given Kiosk calculates the total recycled weight , and gives user with some points <br />
 These points are given as a coupon and can be used to redeem<br />
-
+   
 Thankyou .
