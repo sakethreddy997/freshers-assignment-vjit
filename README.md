@@ -43,7 +43,20 @@ user would select either of them  , and enters the number of cans he want to pla
 On the basis of the inputs given Kiosk calculates the total recycled weight , and gives user with some points <br />
 These points are given as a coupon and can be used to redeem<br />
 
+**user details are taken from the console and stored in a textfile**
+**using string tokenizers,user credentials are validated when he logins into the kiosk**
+**coupon code will be generated and assigned to a particular user**
+
+
+
 # References
-To generate coupon code , used the 5th block from https://www.baeldung.com/java-random-string
+To generate coupon code , used the 5th block from https://www.baeldung.com/java-random-string .
+i found like this block of code is simple and , which can genrate he code directly.
+
+# Improvments to be done
+As of now , a coupon code is generated for a user when he enters all the details , but need to make this application to an <br />
+extent of assigning the coupon code with the points.
+
+
    
 Thankyou .
