@@ -39,18 +39,10 @@ public class Rubicon_app
 	Coupon cop = new Coupon();
 
 
-	//else
-	//System.out.println("User not found");
-	//}
-
 
 	// Coupon code generation
 	Construct red = new Construct(name, quantity, capacity, weight);
-	//public static String givenUsingApache_whenGeneratingRandomAlphanumericString_thenCorrect() {
-	//String generatedString = RandomStringUtils.randomAlphanumeric(7);
 
-	//return(generatedString);
-	//}
 
 
 	private static Node getItem(Document doc, String name, String qty, String cap) {
@@ -68,39 +60,6 @@ public class Rubicon_app
 	}
 
 
-	// User validation
-	/*public static boolean verifyLogin(String phone1,String password1,String filepath)
-	{
-		boolean found=false;
-		String tempPhone="";
-		String tempPassword="";
-
-		try
-		{
-			x=new Scanner(new File(filepath));
-			x.useDelimiter("[,\n]");
-
-			while(x.hasNext() && !found)
-			{
-				tempPhone=x.next();
-				tempPassword=x.next();
-
-
-				if(tempPhone.trim().equals(phone1.trim()) && tempPassword.trim().equals(password1.trim())  ) 
-				{
-					found=true;
-				}
-
-			}
-			x.close();
-
-		}
-		catch(Exception e)
-		{
-			System.out.println(e);
-		}
-		return found;
-	}*/
 	
 	public static void main( String[] args ) throws  IOException ,ParserConfigurationException, TransformerException
 	{
