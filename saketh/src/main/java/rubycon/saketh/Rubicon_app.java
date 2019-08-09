@@ -215,11 +215,11 @@ public class Rubicon_app
 
 
 		transformer.transform(source, file1);
-		System.out.println("Total amout of recycled items: "+tgrams+" gms");
+        System.out.println("Total weight of recycled product: " + tgrams + " gms");
 
-		System.out.println("Total credits earned are: " + String.format("%.0f", (2 * tgrams * 1.5)));
+        System.out.println(" credits : " + String.format("%.0f", (2 * tgrams * 1.5)));
 
-		System.out.println("Coupon Code to redeem your credits is: " + coupon);
+        System.out.println("Coupon Code " + coupon);
 	}
 
 }
