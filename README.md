@@ -43,7 +43,7 @@ user would select either of them  , and enters the number of cans he want to pla
 On the basis of the inputs given Kiosk calculates the total recycled weight , and gives user with some points <br />
 These points are given as a coupon and can be used to redeem<br />
 
-**user details are taken from the console and stored in a textfile**<br />
+**user details are taken from the console and stored in a textfile (out.txt)**<br />
 **using string tokenizers,user credentials are validated when he logins into the kiosk**<br />
 **coupon code will be generated and assigned to a particular user**<br />
 
