@@ -8,7 +8,7 @@ Using these particular requirments identified  , need to analyze how to build th
 
 # Requirments
 java programming language <br />
-jdk 1.7.1 <br />
+jdk 1.7.1 <br />  
 junit -to test the application <br />
 Any of the ide  ex: Intellij , eclipse , netbeans. <br />
 understanding over oops concepts.<br />
