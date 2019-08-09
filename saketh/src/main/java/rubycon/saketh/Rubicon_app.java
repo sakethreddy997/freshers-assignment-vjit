@@ -134,6 +134,7 @@ public class Rubicon_app
 			int m;
 			boolean mi;
 			do {
+				System.out.println("***Please enter the details  only in  numerical form*** ");
 				//Rubicon_app plastic=new Rubicon_app(1,"Plastic bottles",0,0,0.02); 
 				Rubicon_app i1=new Rubicon_app("Bisleri PET 750ml",0,750,0.02);
 				Rubicon_app i4=new Rubicon_app("Kineley PET 2L",0,2000,0.02);
@@ -160,6 +161,7 @@ public class Rubicon_app
 			int o = 0 ;
 			boolean oi;
 			do {
+				System.out.println("***Please enter the details  only in  numerical form*** ");
 				//Rubicon_app glass=new Rubicon_app(2,"Glasses",0,0,0.7);  
 
 				Rubicon_app i2=new Rubicon_app("Bisleri 200ml",0,200,0.7);  
@@ -193,6 +195,8 @@ public class Rubicon_app
 			int p = 0;
 			boolean pi;
 			do {
+				System.out.println("***Please enter the details  only in  numerical form*** ");
+
 				//Rubicon_app metal=new Rubicon_app(3,"Metal Cans",0,0,0.04);  
 				Rubicon_app i3=new Rubicon_app("Sprite Can 200ml",0,200,0.04);
 				Rubicon_app i10=new Rubicon_app("KInley soda Can 500",0,500,0.04);
