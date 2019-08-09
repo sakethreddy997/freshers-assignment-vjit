@@ -12,6 +12,7 @@ public class Login {
 
 		System.out.println("***********Rubicon Red Kiosk***************");
 
+
 		System.out.println("############################################");
 
 
