@@ -134,14 +134,14 @@ public class Rubicon_app
 			int m;
 			boolean mi;
 			do {
-				Rubicon_app plastic=new Rubicon_app(1,"Plastic bottles",0,0,0.02); 
+				//Rubicon_app plastic=new Rubicon_app(1,"Plastic bottles",0,0,0.02); 
 				Rubicon_app i1=new Rubicon_app("Bisleri PET 750ml",0,750,0.02);
 				Rubicon_app i4=new Rubicon_app("Kineley PET 2L",0,2000,0.02);
 				Rubicon_app i5=new Rubicon_app("Coke PET 750ml",0,750,0.02);
 				Rubicon_app i8=new Rubicon_app("Pepsi PET 2L",0,2000,0.02); 
 
 
-				al.add(plastic);  
+				//al.add(plastic);  
 				al.add(i1);
 				al.add(i4);  
 				al.add(i5);
@@ -160,7 +160,7 @@ public class Rubicon_app
 			int o = 0 ;
 			boolean oi;
 			do {
-				Rubicon_app glass=new Rubicon_app(2,"Glasses",0,0,0.7);  
+				//Rubicon_app glass=new Rubicon_app(2,"Glasses",0,0,0.7);  
 
 				Rubicon_app i2=new Rubicon_app("Bisleri 200ml",0,200,0.7);  
 
@@ -171,7 +171,7 @@ public class Rubicon_app
 
 				Rubicon_app i9=new Rubicon_app("Coa cola Glass 650",0,650,0.7);  
 
-				al.add(glass); 
+				//al.add(glass); 
 				al.add(i2);  
 
 
@@ -193,11 +193,11 @@ public class Rubicon_app
 			int p = 0;
 			boolean pi;
 			do {
-				Rubicon_app metal=new Rubicon_app(3,"Metal Cans",0,0,0.04);  
+				//Rubicon_app metal=new Rubicon_app(3,"Metal Cans",0,0,0.04);  
 				Rubicon_app i3=new Rubicon_app("Sprite Can 200ml",0,200,0.04);
 				Rubicon_app i10=new Rubicon_app("KInley soda Can 500",0,500,0.04);
 				Rubicon_app i7=new Rubicon_app("Diet coke 200ml",0,200,0.04); 
-				al.add(metal); 
+				//al.add(metal); 
 				al.add(i3);
 				al.add(i7);  
 				al.add(i10);  
@@ -327,7 +327,7 @@ public class Rubicon_app
 		this.capacity=cap;
 		this.weight=wt;
 	}  
-	Rubicon_app(int itemno,String name,int qty,int cap,double wt)
+	/*Rubicon_app(int itemno,String name,int qty,int cap,double wt)
 	{  
 		this.itemno=itemno;  
 		this.name=name;
@@ -337,6 +337,6 @@ public class Rubicon_app
 		System.out.println("Enter the capacity of "+name+" in ml");
 		this.capacity=x.nextInt();
 		this.weight=wt;
-	} 
+	} */
 
 }
