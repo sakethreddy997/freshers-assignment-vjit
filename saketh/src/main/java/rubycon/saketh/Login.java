@@ -53,9 +53,11 @@ public class Login {
 
 		} else if (ni == false) {
 			System.out.println("***Hello Rubicon folk*** ");
-			System.out.println("***Please enter you mobile number*** ");
 
 		}
+        System.out.println("*** Login ***");
+
+        System.out.println("***Please enter you mobile number*** ");
 		Scanner scanner6 = new Scanner(System.in);
 		String phone2 = scanner6.nextLine();
 		System.out.println("***Please enter your password*** ");

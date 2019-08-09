@@ -72,7 +72,7 @@ public class Rubicon_app
 
 
 		x = new java.util.Scanner(System.in);
-		System.out.println("Please slect one of the  \n ");
+		System.out.println("Please select one of the  \n ");
 		System.out.println(" 1.Plastic Bottles\n 2.Glass\n 3.Metalcans");
 
 		int op = x.nextInt();

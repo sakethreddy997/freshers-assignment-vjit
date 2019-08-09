@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Items xmlns="SwachhBharat">
     <Item>
-        <Item>Bisleri 200ml</Item>
+        <Item>Bisleri PET 750ml</Item>
         <Quantity>1</Quantity>
-        <Capacity>200</Capacity>
+        <Capacity>750</Capacity>
     </Item>
     <Item>
-        <Item>Kinley</Item>
+        <Item>Kineley PET 2L</Item>
         <Quantity>1</Quantity>
-        <Capacity>200</Capacity>
+        <Capacity>2000</Capacity>
     </Item>
     <Item>
-        <Item>Coa cola Glass 650</Item>
+        <Item>Coke PET 750ml</Item>
         <Quantity>1</Quantity>
-        <Capacity>650</Capacity>
+        <Capacity>750</Capacity>
+    </Item>
+    <Item>
+        <Item>Pepsi PET 2L</Item>
+        <Quantity>1</Quantity>
+        <Capacity>2000</Capacity>
     </Item>
 </Items>
