@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Items xmlns="SwachhBharat">
+    <Item>
+        <Item>Bisleri 200ml</Item>
+        <Quantity>1</Quantity>
+        <Capacity>200</Capacity>
+    </Item>
+    <Item>
+        <Item>Kinley</Item>
+        <Quantity>1</Quantity>
+        <Capacity>200</Capacity>
+    </Item>
+    <Item>
+        <Item>Coa cola Glass 650</Item>
+        <Quantity>1</Quantity>
+        <Capacity>650</Capacity>
+    </Item>
+</Items>
