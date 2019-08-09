@@ -1,6 +1,1 @@
-hi
-line a
-line b
-line c
-
-Test
+96422,1234,psr,TErMgK4
