@@ -112,9 +112,12 @@ public class Rubicon_app
 				Construct i2 = new Construct("Bisleri 200ml", 0, 200, 0.7);
                 Construct i6 = new Construct(" Kinley", 0, 200, 0.5);
                 Construct i9 = new Construct("Coa cola Glass 650", 0, 650, 0.3);
+                Construct i11 = new Construct("diet coke Glass 350", 0, 350, 0.3);
+
 				al.add(i2);
 				al.add(i6);
 				al.add(i9);
+                al.add(i11);
 				System.out.println("Do you want to enter more items of different capacity 0(no)/1(yes)");
 				m = x.nextInt();
 				if(o==0) oi=false; else oi=true;
@@ -129,10 +132,11 @@ public class Rubicon_app
                 Construct i3 = new Construct("Sprite Can 200ml", 0, 200, 0.06);
                 Construct i10 = new Construct("Kinley soda Can 500", 0, 500, 0.08);
 				Construct i7 = new Construct("Diet coke 200ml", 0, 200, 0.04);
-
+                Construct i12 = new Construct("Redbull 200ml", 0, 200, 0.02);
 				al.add(i3);
 				al.add(i7);
 				al.add(i10);
+                al.add(i12);
 
 				System.out.println("Do you want to enter more items of different capacity 0(no)/1(yes)");
 				m = x.nextInt();
