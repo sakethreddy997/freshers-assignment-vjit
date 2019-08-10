@@ -26,9 +26,9 @@ By making use of java programming , and concepts of object oriented programming 
 when the generated jar file is made to run on the local system , the console asks the user weather he is a new user or not and <br />
 ### Shows- New user[0] , old user [1]  <br />
 if the user **enters 0** , then console prompts the user to enter his/her :  <br />
-Name  <br />
-email id  <br />
 Mobile  no  <br />
+Password <br/>
+Name  <br />
 and through this the details of the user gets stored in a file (to make these details to get stored into a seperate file ,we use concepts of : <br />
 Files <br />
 File Buffers  <br />
