@@ -61,6 +61,6 @@ i found like this block of code is simple and , which can genrate he code direct
 As of now , a coupon code is generated for a user when he enters all the details , but need to make this application to an <br />
 extent of assigning the coupon code with the points.
 
-
-   
+# Note
+-------- Master branch is the original branch of the code , and remaining branches are for backup
 Thankyou .
