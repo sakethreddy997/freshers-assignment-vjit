@@ -127,7 +127,7 @@ public class Rubicon_app
 			do {
 				System.out.println("***Please enter the details  only in  numerical form*** ");
                 Construct i3 = new Construct("Sprite Can 200ml", 0, 200, 0.06);
-                Construct i10 = new Construct("KInley soda Can 500", 0, 500, 0.08);
+                Construct i10 = new Construct("Kinley soda Can 500", 0, 500, 0.08);
 				Construct i7 = new Construct("Diet coke 200ml", 0, 200, 0.04);
 
 				al.add(i3);
