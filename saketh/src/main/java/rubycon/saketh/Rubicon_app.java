@@ -86,10 +86,10 @@ public class Rubicon_app
 			do {
 				System.out.println("***Please enter the details  only in  numerical form*** ");
 
-				Construct i1 = new Construct("Bisleri PET 750ml", 0, 750, 0.02);
-				Construct i4 = new Construct("Kineley PET 2L", 0, 2000, 0.02);
+                Construct i1 = new Construct("Bisleri PET 750ml", 0, 750, 0.04);
+                Construct i4 = new Construct("Kineley PET 2L", 0, 2000, 0.03);
 				Construct i5 = new Construct("Coke PET 750ml", 0, 750, 0.02);
-				Construct i8 = new Construct("Pepsi PET 2L", 0, 2000, 0.02);
+                Construct i8 = new Construct("Pepsi PET 2L", 0, 2000, 0.01);
 				al.add(i1);
 				al.add(i4);
 				al.add(i5);
@@ -110,8 +110,8 @@ public class Rubicon_app
 			do {
 				System.out.println("***Please enter the details  only in  numerical form*** ");
 				Construct i2 = new Construct("Bisleri 200ml", 0, 200, 0.7);
-				Construct i6 = new Construct(" Kinley", 0, 200, 0.7);
-				Construct i9 = new Construct("Coa cola Glass 650", 0, 650, 0.7);
+                Construct i6 = new Construct(" Kinley", 0, 200, 0.5);
+                Construct i9 = new Construct("Coa cola Glass 650", 0, 650, 0.3);
 				al.add(i2);
 				al.add(i6);
 				al.add(i9);
@@ -126,8 +126,8 @@ public class Rubicon_app
 			boolean pi;
 			do {
 				System.out.println("***Please enter the details  only in  numerical form*** ");
-				Construct i3 = new Construct("Sprite Can 200ml", 0, 200, 0.04);
-				Construct i10 = new Construct("KInley soda Can 500", 0, 500, 0.04);
+                Construct i3 = new Construct("Sprite Can 200ml", 0, 200, 0.06);
+                Construct i10 = new Construct("KInley soda Can 500", 0, 500, 0.08);
 				Construct i7 = new Construct("Diet coke 200ml", 0, 200, 0.04);
 
 				al.add(i3);
