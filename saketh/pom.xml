@@ -37,7 +37,7 @@
 			<configuration>
 				<archive>
 					<manifest>
-						<mainClass>rubycon.saketh.App</mainClass>
+                        <mainClass>rubycon.saketh.Rubicon_app</mainClass>
 					</manifest>
 				</archive>
 			</configuration>
