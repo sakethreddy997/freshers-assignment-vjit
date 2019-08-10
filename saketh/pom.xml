@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>rubycon</groupId>
-  <artifactId>saketh</artifactId>
+    <artifactId>rubycon</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
@@ -37,11 +37,19 @@
 			<configuration>
 				<archive>
 					<manifest>
-						<mainClass>rubycon.saketh.App</mainClass>
+                        <mainClass>rubycon.saketh.Rubicon_app</mainClass>
 					</manifest>
 				</archive>
 			</configuration>
 		</plugin>
-	 </plugins>
+       <plugin>
+           <groupId>org.apache.maven.plugins</groupId>
+           <artifactId>maven-compiler-plugin</artifactId>
+           <configuration>
+               <source>6</source>
+               <target>6</target>
+           </configuration>
+       </plugin>
+   </plugins>
  </build>
 </project>

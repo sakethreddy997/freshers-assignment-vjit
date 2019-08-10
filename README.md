@@ -26,9 +26,9 @@ By making use of java programming , and concepts of object oriented programming 
 when the generated jar file is made to run on the local system , the console asks the user weather he is a new user or not and <br />
 ### Shows- New user[0] , old user [1]  <br />
 if the user **enters 0** , then console prompts the user to enter his/her :  <br />
-Name  <br />
-email id  <br />
 Mobile  no  <br />
+Password <br/>
+Name  <br />
 and through this the details of the user gets stored in a file (to make these details to get stored into a seperate file ,we use concepts of : <br />
 Files <br />
 File Buffers  <br />
@@ -43,7 +43,25 @@ user would select either of them  , and enters the number of cans he want to pla
 On the basis of the inputs given Kiosk calculates the total recycled weight , and gives user with some points <br />
 These points are given as a coupon and can be used to redeem<br />
 
+**user details are taken from the console and stored in a textfile (out.txt)**<br />
+**using string tokenizers,user credentials are validated when he logins into the kiosk**<br />
+**coupon code will be generated and assigned to a particular user**<br />
+
+
+
 # References
-To generate coupon code , used the 5th block from https://www.baeldung.com/java-random-string
-   
+To generate coupon code , used the 5th block from https://www.baeldung.com/java-random-string .
+i found like this block of code is simple and , which can genrate he code directly.<br/>
+
+** Got an exception while using this code , i guess that is because of some jar related issue, so changed the coupon genereation code.** <br/>
+
+
+
+# Improvments to be done
+As of now , a coupon code is generated for a user when he enters all the details , but need to make this application to an <br />
+extent of assigning the coupon code with the points.
+
+# Note
+-------- Master branch is the original branch of the code , and remaining branches are for backup.<br/>
+-------- Screenshot folder has all the workflow screenshots<br/>
 Thankyou .
