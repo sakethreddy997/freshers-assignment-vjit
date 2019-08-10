@@ -66,7 +66,7 @@ public class Rubicon_app
 		String filepath = "out.txt";
 		double tgrams=0;
 		Coupon cp = new Coupon();
-		String coupon = cp.givenUsingPlainJava_whenGeneratingRandomStringUnbounded_thenCorrect();
+		String coupon = cp.givenUsingPlainJava_whenGeneratingRandomStringBounded_thenCorrect();
 
 		Login login = new Login(coupon);
 
