@@ -51,7 +51,11 @@ These points are given as a coupon and can be used to redeem<br />
 
 # References
 To generate coupon code , used the 5th block from https://www.baeldung.com/java-random-string .
-i found like this block of code is simple and , which can genrate he code directly.
+i found like this block of code is simple and , which can genrate he code directly.<br/>
+
+** Got an exception while using this code , i guess that is because of some jar related issue, so changed the coupon genereation code.** <br/>
+
+
 
 # Improvments to be done
 As of now , a coupon code is generated for a user when he enters all the details , but need to make this application to an <br />
