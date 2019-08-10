@@ -62,5 +62,6 @@ As of now , a coupon code is generated for a user when he enters all the details
 extent of assigning the coupon code with the points.
 
 # Note
--------- Master branch is the original branch of the code , and remaining branches are for backup
+-------- Master branch is the original branch of the code , and remaining branches are for backup.
+-------- Screenshot folder has all the workflow screenshots
 Thankyou .
