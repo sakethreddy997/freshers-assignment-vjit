@@ -13,7 +13,7 @@ public class Construct {
     Construct(String name, int qty, int cap, double wt) {
         this.setName(name);
         Scanner x = new java.util.Scanner(System.in);
-        System.out.println("Enter number of " + name);
+        System.out.println("PLease enter the number of '' " + name + " '' that you want to place in the kiosk");
         this.setQuantity(x.nextInt());
         this.setCapacity(cap);
         this.setWeight(wt);

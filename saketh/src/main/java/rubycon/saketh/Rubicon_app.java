@@ -180,9 +180,9 @@ public class Rubicon_app
 		transformer.transform(source, file1);
         System.out.println("Total weight of recycled product: " + tgrams + " gms");
 
-        System.out.println(" credits : " + String.format("%.0f", (2 * tgrams * 1.5)));
+		System.out.println(" credits : " + String.format("%f", (2 * tgrams * 1.5)));
 
-        System.out.println("Coupon Code " + coupon);
+		System.out.println("Coupon Code :  " + coupon);
 	}
 
 }
