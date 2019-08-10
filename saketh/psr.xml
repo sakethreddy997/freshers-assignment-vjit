@@ -2,23 +2,22 @@
 <Items xmlns="SwachhBharat">
     <Item>
         <Item>Bisleri PET 750ml</Item>
-        <Quantity>1</Quantity>
+        <Quantity>3</Quantity>
         <Capacity>750</Capacity>
     </Item>
     <Item>
         <Item>Kineley PET 2L</Item>
-        <Quantity>1</Quantity>
+        <Quantity>4</Quantity>
         <Capacity>2000</Capacity>
     </Item>
     <Item>
         <Item>Coke PET 750ml</Item>
-        <Quantity>1</Quantity>
+        <Quantity>6</Quantity>
         <Capacity>750</Capacity>
     </Item>
     <Item>
         <Item>Pepsi PET 2L</Item>
-        <Quantity>1</Quantity>
+        <Quantity>3</Quantity>
         <Capacity>2000</Capacity>
     </Item>
 </Items>
-
