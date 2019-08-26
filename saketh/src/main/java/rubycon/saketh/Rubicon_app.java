@@ -24,7 +24,7 @@ public class Rubicon_app
 {
 	public static Scanner x;
 	private static PrintWriter pw;
-	int itemno;  
+	int itemno;
 	String name;  
 	int quantity;
 	int capacity;
@@ -34,15 +34,7 @@ public class Rubicon_app
 	String phone1;
 
 	private String tgrams;
-
-
-	Coupon cop = new Coupon();
-
-
-
-
-	Construct red = new Construct(name, quantity, capacity, weight);
-
+	String filepath = "out.txt";
 
 
 	private static Node getItem(Document doc, String name, String qty, String cap) {
@@ -63,16 +55,16 @@ public class Rubicon_app
 	
 	public static void main( String[] args ) throws  IOException ,ParserConfigurationException, TransformerException
 	{
-		String filepath = "out.txt";
+
 		double tgrams=0;
 		Coupon cp = new Coupon();
-		String coupon = cp.givenUsingPlainJava_whenGeneratingRandomStringBounded_thenCorrect();
+		String coupon = cp.generate_code();
 
 		Login login = new Login(coupon);
 
 
 		x = new java.util.Scanner(System.in);
-		System.out.println("Please select one of the  \n ");
+		System.out.println("Please select one of the following \n ");
 		System.out.println(" 1.Plastic Bottles\n 2.Glass\n 3.Metalcans");
 
 		int op = x.nextInt();
@@ -165,8 +157,8 @@ public class Rubicon_app
 		while(iterator.hasNext()) {
 			Construct it = (Construct) iterator.next();
 			rootElement.appendChild(getItem(doc, it.getName(), Integer.toString(it.getQuantity()), Integer.toString(it.getCapacity())));
-
 			tgrams += it.getQuantity() * it.getCapacity() * it.getWeight();
+
 
 		}
 		TransformerFactory transformerFactory = TransformerFactory.newInstance();
@@ -178,7 +170,8 @@ public class Rubicon_app
 
 
 		transformer.transform(source, file1);
-        System.out.println("Total weight of recycled product: " + tgrams + " gms");
+
+		System.out.println("Total weight of recycled product: " + tgrams + " gms");
 
 		System.out.println("");
 		System.out.println(" credits : " + String.format("%f", (2 * tgrams * 1.5)));
