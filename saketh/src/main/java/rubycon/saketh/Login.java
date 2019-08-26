@@ -27,9 +27,10 @@ public class Login {
 		} else {
 			ni = true;
 		}
+		File file = new File("out.txt");
 
 		if (ni == true) {
-			File file = new File("out.txt");
+
 			FileWriter fw = new FileWriter(file, true);
 			PrintWriter pw = new PrintWriter(fw);
 			System.out.println("Enter your mobile no");
@@ -55,38 +56,40 @@ public class Login {
 		} else if (ni == false) {
 			System.out.println("***Hello Rubicon folk*** ");
 
-		}
-        System.out.println("*** Login ***");
 
-        System.out.println("***Please enter you mobile number*** ");
-		Scanner scanner6 = new Scanner(System.in);
-		String phone2 = scanner6.nextLine();
-		System.out.println("***Please enter your password*** ");
+			System.out.println("*** Login ***");
 
-		Scanner scanner7 = new Scanner(System.in);
-		String password2 = scanner6.nextLine();
+			System.out.println("***Please enter you mobile number*** ");
+			Scanner scanner6 = new Scanner(System.in);
+			String phone2 = scanner6.nextLine();
+			System.out.println("***Please enter your password*** ");
 
-		FileReader fr = new FileReader();
-
-		if (fr.verifyUser(phone2, password2)) {
-			System.out.println("***Welcome*** ");
+			Scanner scanner7 = new Scanner(System.in);
+			String password2 = scanner6.nextLine();
 
 
-		} else {
+			FileReader fr = new FileReader(file, true);
 
-			while (!(fr.verifyUser(phone2, password2))) {
-				System.out.println("***enter correct mobile number and password*** ");
-				System.out.println("***enter phone number");
-				phone2 = scanner6.nextLine();
-				System.out.println("***Please enter your password*** ");
+			if (fr.verifyUser(phone2, password2)) {
+				System.out.println("***Welcome*** ");
 
 
-				password2 = scanner6.nextLine();
-				if ((fr.verifyUser(phone2, password2))) {
-					break;
+			} else {
+
+				while (!(fr.verifyUser(phone2, password2))) {
+					System.out.println("***enter correct mobile number and password*** ");
+					System.out.println("***enter phone number");
+					phone2 = scanner6.nextLine();
+					System.out.println("***Please enter your password*** ");
+
+
+					password2 = scanner6.nextLine();
+					if ((fr.verifyUser(phone2, password2))) {
+						break;
+					}
 				}
-			}
 
+			}
 		}
 	}
-} 
+}

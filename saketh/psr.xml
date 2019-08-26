@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Items xmlns="SwachhBharat">
     <Item>
-        <Item>Bisleri PET 750ml</Item>
-        <Quantity>1</Quantity>
-        <Capacity>750</Capacity>
+        <Item>Sprite Can 200ml</Item>
+        <Quantity>12</Quantity>
+        <Capacity>200</Capacity>
     </Item>
     <Item>
-        <Item>Kineley PET 2L</Item>
-        <Quantity>1</Quantity>
-        <Capacity>2000</Capacity>
+        <Item>Diet coke 200ml</Item>
+        <Quantity>22</Quantity>
+        <Capacity>200</Capacity>
     </Item>
     <Item>
-        <Item>Coke PET 750ml</Item>
-        <Quantity>1</Quantity>
-        <Capacity>750</Capacity>
+        <Item>Kinley soda Can 500</Item>
+        <Quantity>34</Quantity>
+        <Capacity>500</Capacity>
     </Item>
     <Item>
-        <Item>Pepsi PET 2L</Item>
-        <Quantity>2</Quantity>
-        <Capacity>2000</Capacity>
+        <Item>Redbull 200ml</Item>
+        <Quantity>55</Quantity>
+        <Capacity>200</Capacity>
     </Item>
 </Items>

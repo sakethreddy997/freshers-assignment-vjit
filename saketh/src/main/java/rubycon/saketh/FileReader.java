@@ -7,15 +7,13 @@ import java.util.StringTokenizer;
 
 public class FileReader {
 
-
-    public FileReader() {
+    public FileReader(File file, boolean b) {
     }
 
 
     public boolean verifyUser(String username, String pwd) {
-        int count = 0;
-        String fileUsername;
 
+        String fileUsername;
         String filePwd;
         try {
             Scanner scanner = new Scanner(new File("out.txt"));
@@ -25,10 +23,8 @@ public class FileReader {
 
                 StringTokenizer st1 = new StringTokenizer(line, ",");
                 while (st1.hasMoreTokens()) {
-                    count++;
-                    fileUsername = st1.nextToken();
 
-                    if (count == 1) {
+                    fileUsername = st1.nextToken();
                         if (fileUsername.equals(username)) {
                             filePwd = st1.nextToken();
                             if (filePwd.equals(pwd)) {
@@ -37,11 +33,8 @@ public class FileReader {
 
                         }
 
-
-                    }
-
                 }
-                count = 0;
+
             }
             scanner.close();
         } catch (FileNotFoundException e) {
