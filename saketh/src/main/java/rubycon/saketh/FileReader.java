@@ -12,7 +12,7 @@ public class FileReader {
 
 
     public boolean verifyUser(String username, String pwd) {
-        int count = 0;
+
         String fileUsername;
         String filePwd;
         try {
@@ -23,11 +23,8 @@ public class FileReader {
 
                 StringTokenizer st1 = new StringTokenizer(line, ",");
                 while (st1.hasMoreTokens()) {
-                    count++;
+
                     fileUsername = st1.nextToken();
-
-                    if (count == 1) {
-
                         if (fileUsername.equals(username)) {
                             filePwd = st1.nextToken();
                             if (filePwd.equals(pwd)) {
@@ -36,11 +33,8 @@ public class FileReader {
 
                         }
 
-
-                    }
-
                 }
-                count = 0;
+
             }
             scanner.close();
         } catch (FileNotFoundException e) {
